@@ -108,13 +108,62 @@ li{font-size:15px !important;line-height:1.65 !important;letter-spacing:0 !impor
  .add{font-size:14px !important;}
 }
 </style>
+
+<style id="oh-girl-mobile-readable-final">
+/* Mobile-only typography refinement */
+@media (max-width: 700px) {
+  .description, .story p { font-size: 20px !important; line-height: 1.75 !important; letter-spacing: 0 !important; }
+  li { font-size: 19px !important; line-height: 1.7 !important; letter-spacing: 0 !important; }
+  .note { font-size: 19px !important; line-height: 1.75 !important; }
+  .label { font-size: 17px !important; }
+  .stock { font-size: 15px !important; }
+  .add { font-size: 16px !important; }
+  .kicker { font-size: 13px !important; }
+  .crumb { font-size: 13px !important; }
+}
+</style>
+
+
+<style id="oh-girl-desktop-readable-compact">
+/* Desktop readability: larger text with tighter, balanced line spacing */
+@media (min-width: 701px) {
+  .crumb { font-size: 13px !important; }
+  .kicker { font-size: 12px !important; }
+  .price { font-size: 26px !important; }
+  .description, .story p {
+    font-size: 18px !important;
+    line-height: 1.45 !important;
+    letter-spacing: 0 !important;
+  }
+  .add { font-size: 16px !important; }
+  .stock { font-size: 14px !important; }
+  .label { font-size: 15px !important; }
+  li {
+    font-size: 17px !important;
+    line-height: 1.35 !important;
+    letter-spacing: 0 !important;
+  }
+  .note {
+    font-size: 17px !important;
+    line-height: 1.45 !important;
+  }
+  .footer p, .footer a { font-size: 14px !important; line-height: 1.45 !important; }
+  .footer-title { font-size: 14px !important; }
+  .bottom { font-size: 12px !important; }
+}
+@media (max-width: 700px) {
+  .description, .story p { font-size: 20px !important; line-height: 1.4 !important; }
+  li { font-size: 19px !important; line-height: 1.35 !important; }
+  .note { font-size: 19px !important; line-height: 1.4 !important; }
+}
+</style>
+
 </head>
 <body>
 <div class="shell">
 <header class="header">
  <a class="logo" href="index.html">OH GIRL</a>
- <button class="search" aria-label="Пошук"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
-</header>
+ </header>
 <main>
  <div class="crumb"><a href="index.html">Головна</a>　/　Карта бажань OH GIRL</div>
  <div class="layout">
