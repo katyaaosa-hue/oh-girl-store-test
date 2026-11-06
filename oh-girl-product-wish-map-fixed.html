@@ -8,10 +8,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#242121;--muted:#77716f;--paper:#f3f2f0;--white:#fff;--line:#eae6e2;--pink:#f2dce2;--tracking:-1px}
+:root{--ink:#5e0032;--muted:#77716f;--paper:#f3f2f0;--white:#fff;--line:#eae6e2;--pink:#f2dce2;--tracking:-1px}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Arial,sans-serif;letter-spacing:var(--tracking);-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'OH Computer',Arial,sans-serif;letter-spacing:var(--tracking);-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 button{font:inherit;letter-spacing:inherit}
 .shell{width:min(1500px,calc(100% - 36px));margin:18px auto;background:#fff;border-radius:30px;overflow:hidden;box-shadow:0 12px 50px rgba(49,35,30,.045)}
@@ -70,6 +70,43 @@ li:before{content:"✓";color:#b85d79;font-weight:700}
  .footer-brand{grid-column:1/-1}
  .bottom{grid-column:1/-1}
 }
+
+/* OH GIRL brand refresh: burgundy + brand typography */
+@font-face{font-family:'OH Computer';src:url('assets/fonts/computer-says-no.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'OH Druk';src:url('assets/fonts/DrukCyr-Heavy.ttf') format('truetype');font-weight:700 900;font-style:normal;font-display:swap}
+@font-face{font-family:'OH Druk Wide';src:url('assets/fonts/Druk Wide Cyr.ttf') format('truetype');font-weight:700 900;font-style:normal;font-display:swap}
+:root{--ink:#5e0032}
+body{font-family:'OH Computer',Arial,sans-serif}
+.logo,.footer-logo{font-family:'OH Druk Wide',Arial,sans-serif;font-weight:700;letter-spacing:-.02em}
+h1,.story h2{font-family:'OH Druk',Arial,sans-serif;font-weight:700;letter-spacing:0}
+button,.price,.kicker,.crumb,.label,.stock,.counter,.footer-title,.footer a,.footer p,.bottom,li,.description,.note{font-family:'OH Computer',Arial,sans-serif}
+[data-cart-count]{font-family:'OH Computer',Arial,sans-serif!important}
+</style>
+
+<style id="oh-girl-readable-type">
+/* Readability pass: keep layout and copy unchanged, enlarge supporting text */
+.crumb{font-size:13px !important;}
+.kicker{font-size:12px !important;}
+.price{font-size:24px !important;}
+.description{font-size:16px !important;line-height:1.8 !important;letter-spacing:0 !important;}
+.add{font-size:15px !important;}
+.stock{font-size:13px !important;}
+.label{font-size:14px !important;}
+li{font-size:15px !important;line-height:1.65 !important;letter-spacing:0 !important;}
+.note{font-size:15px !important;line-height:1.8 !important;}
+.story p{font-size:15px !important;line-height:1.8 !important;}
+.footer p,.footer a{font-size:13px !important;line-height:1.7 !important;}
+.footer-title{font-size:13px !important;}
+.bottom{font-size:12px !important;}
+.counter{font-size:12px !important;}
+@media(max-width:700px){
+ .crumb{font-size:12px !important;}
+ .kicker{font-size:11px !important;}
+ .description{font-size:15px !important;}
+ li{font-size:14px !important;}
+ .note,.story p{font-size:14px !important;}
+ .add{font-size:14px !important;}
+}
 </style>
 </head>
 <body>
@@ -94,19 +131,20 @@ li:before{content:"✓";color:#b85d79;font-weight:700}
    <p class="kicker">OH GIRL · КОЛЕКЦІЯ</p>
    <h1>Карта бажань OH GIRL</h1>
    <p class="price">1 190 ₴</p>
-   <p class="description">Створи простір для своїх мрій, зберігай натхнення та щодня нагадуй собі про те, до чого прагнеш. Набір OH GIRL допоможе зібрати бажання в одному місці та зробити перші кроки до їх здійснення.</p>
-   <button class="add" type="button">Додати до кошика</button>
-   <p class="stock">●　В наявності</p>
-   <div class="divider"></div>
-   <p class="label">У комплекті:</p>
-   <ul>
-    <li>Карта бажань формату А3 у фірмовому тубусі</li>
-    <li>224 наліпки</li>
-    <li>Лист вдячності</li>
-    <li>Трекер корисних звичок</li>
-    <li>Аркуш «100 бажань»</li>
-    <li>Energy Givers / Energy Takers</li>
-   </ul>
+   <p class="description">Карта бажань OH GIRL — це простір для твоїх мрій, цілей та натхнення. Комплексний набір, який допоможе краще зрозуміти власні бажання, розставити пріоритети та перетворити мрії на конкретні наміри.</p>
+      <p class="description">Створи власну карту майбутнього, наповни її тим, чого прагнеш, і зроби перший крок назустріч життю, про яке мрієш.</p>
+      <button class="add" type="button">Додати до кошика</button>
+      <p class="stock">●　В наявності</p>
+      <div class="divider"></div>
+      <p class="label">У комплекті:</p>
+      <ul>
+       <li>Карта бажань формату А3 у фірмовому тубусі</li>
+       <li>224 наліпки</li>
+       <li>Лист вдячності</li>
+       <li>Трекер корисних звичок</li>
+       <li>Аркуш «100 бажань»</li>
+       <li>Energy Givers / Energy Takers</li>
+      </ul>
    <div class="divider"></div>
    <p class="label">Відправлення</p>
    <p class="note">Ми робимо все можливе, щоб ваше замовлення вирушило якомога швидше. Відправлення — 1–3 дні за наявності продукту.</p>
@@ -255,7 +293,7 @@ drawThumbs();draw();
         align-items: center;
         justify-content: center;
         margin-left: 16px;
-        color: #222;
+        color: #5e0032;
         text-decoration: none;
     `;
 
